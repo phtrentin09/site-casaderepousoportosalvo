@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/avaliar"
+  to = "https://maps.app.goo.gl/TeSeBeY1nYkpYEY29"
+  status = 302
+  force = true
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
